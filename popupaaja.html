@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUCCESS PAGE</title>
+    <link rel="stylesheet" href="popuppage.css">
+</head>
+<body>
+  
+
+        <div class="container">
+
+            
+                 <div class="btn"><button class="btn" role="button" onclick="openPopup()">*REASSURE*<br>Click Here!<br></button></div>
+        
+            
+            
+            <div class="popup" id="popup">
+                <img src="checked.png">
+                <h4>Thank You!</h4>
+                <p>Your details have been successfully submitted.<br>You will receive a confirmation mail within 48 hrs.</p>
+                <button type="button"><a href="./index.html" class="fccbtn" style="text-decoration: none;"><font color="white">OK</font></a></button>
+            </div>
+        </div>
+        <script>
+            let popup=document.getElementById("popup");
+            function openPopup(){
+                popup.classList.add("open-popup");
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
+        </script>
+</body>
+</html>
